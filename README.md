@@ -1,7 +1,5 @@
 # Sistema de login
 
----
-
 ## Objetivo
 Esta aplicação é um estudo para praticar e desenvolver um sistema de login funcional
 
@@ -20,7 +18,7 @@ Como forma de segurança as senhas seram armazenadas em forma de hash, para evit
 **Autenticação**
 No front-end sera utilizado o JWT (JSON Web Token), para autenticação do usuário
 
----
+
 ## Configurações
 
 ### Ambiente de desenvolvimento, *Deploy* e homologação
@@ -36,11 +34,11 @@ No front-end sera utilizado o JWT (JSON Web Token), para autenticação do usuá
  - **Railway**: IaaS(Infrastructure as a Service), plataforma que irá provissionar o banco de dados Postgres e executará a API
  - **Netlify**: PaaS(Platform as a Service), plataforma que irá hospedar a aplicação client-side
 
----
+
 
 ## Utilização
 
----
+<!--TODO-->
 
 ## Tecnologias Utilizadas
 
