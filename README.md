@@ -40,7 +40,7 @@ No front-end sera utilizado o JWT (JSON Web Token), para autenticação do usuá
 
 <!--TODO-->
 
-## Tecnologias Utilizadas
+## Desenvolvimento
 
 ### Front-end / Client-side
 
@@ -51,12 +51,12 @@ Para a hospedagem da página será utlizado a plataforma Netlify, por conta de s
 #### Interface - Prototipo inicial 
 
 Para o prototipo inicial, seguirá o conceito de *mobile-first*, tendo inicialmente a função de login e em seguida a função de cadastro
-![Prototipo inicial de interface](./img/prototipo_interface.png){width=250}
+<img src="./img/prototipo_interface.png" alt="Primeiro prototipo da interface" width=250px>
 
 #### Botões
-**Entrar**: Ao clicar em entrar sera enviado uma requisição para o back-end com as informações para login
+ - **Entrar**: Ao clicar em entrar sera enviado uma requisição para o back-end com as informações para login
 
-**Cadastrar**: Ao clicar em cadastrar será pedido as informações de nome de usuário e senha
+ - **Cadastrar**: Ao clicar em cadastrar será pedido as informações de nome de usuário e senha
 
 ### Back-end/Server-side ou API
 
@@ -64,6 +64,31 @@ A ***API (Application Program Interface)***, será desenvolvida utlizando ***nod
  - ***Express.js***
  - ***JWT (JSON web token)***
  - ***node-postgres***
+
+ **Criação do server com Express.js**
+
+Primeiro iniciamos o projeto do back-end: `npm init -y`
+
+<img src="./img/npm_init_backend.png" width=250px>
+
+Criar os diretorios da estrutura
+
+<img src="./img/estrutura_backend.png" width=150px>
+
+
+
+ **Conexão com banco de dados**
+ <!--TODO: Falar sobre como será conectado o node com o banco de dados-->
+
+ ### Database
+
+ O banco de dados utilizado será o PostgreSQL, usando o Docker, será criado uma instancia da imagem do Postgres, onde ocorrera os teste e homologação do sistema
+
+ **Modelo de dados**
+ <!--TODO: Cria o modelo de dados do usuário que contenha nome, nome de usuario e senha-->
+
+ **Criptografia da senha**
+ <!--TODO: Falar como será a criptografia e como será feita-->
 
 
 
