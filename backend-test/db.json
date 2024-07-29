@@ -1,20 +1,49 @@
 {
-  "pessoas": [
-    {
-      "id": "1",
-      "name": "bruno"
-    },
-    {
-      "id": "2",
-      "name": "ana"
-    },
-    {
-      "id": "3",
-      "name": "larissa"
-    },
-    {
-      "id": 4,
-      "name": "bruno"
-    }
-  ]
+    "pessoas": [
+        {
+            "name": "Aparecida",
+            "id": "1"
+        },
+        {
+            "id": "3",
+            "name": "larissa"
+        },
+        {
+            "name": "Aparecida",
+            "id": "4"
+        },
+        {
+            "id": "9b7c",
+            "name": "Adriano"
+        },
+        {
+            "id": 5,
+            "name": "Adriano"
+        },
+        {
+            "id": 7,
+            "name": "Adriano"
+        },
+        {
+            "id": 5,
+            "name": "Adriano"
+        }
+    ],
+    "users": [
+        {
+            "id": "1",
+            "username": "bruno1",
+            "password_hash": "$2b$10$zM0cJN/ldn3KHYUXovhCNuesCNxw6erBvfsnqUcDK0vj1uFf5MFGC"
+        },
+        {
+            "id": "2",
+            "username": "ana1",
+            "password_hash": "$2b$10$zM0cJN/ldn3KHYUXovhCNuesCNxw6erBvfsnqUcDK0vj1uFf5MFGC"
+        },
+        {
+            "id": "3",
+            "username": "larissa1",
+            "password_hash": "$2b$10$zM0cJN/ldn3KHYUXovhCNuesCNxw6erBvfsnqUcDK0vj1uFf5MFGC"
+        }
+    ]
 }
