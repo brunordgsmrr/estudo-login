@@ -7,7 +7,8 @@ const register = async (req, res) => {
     const { username, password } = req.body;
 
     try {
-        const hashedPassword = await bcrypt.hash(password, 10);
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
         const result = await pool.query(
             "INSERT INTO users (username, password) VALUES ($1, $2) RETURNING *",
             [username, hashedPassword]
@@ -32,8 +33,10 @@ const login = async (req, res) => {
         const validPassword = await bcrypt.compare(password, user.password);
         if (!validPassword) return res.status(400).json({ message: "Senha incorreta" });
 
+        const features = user.features?.split(',');
+
         // Gerar token JWT
-        const token = jwt.sign({ id: user.id, username: user.username }, process.env.JWT_SECRET, {
+        const token = jwt.sign({ id: user.id, username: user.username, features }, process.env.JWT_SECRET, {
             expiresIn: "1h",
         });
 
